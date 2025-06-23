@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Site Map</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Web logo -->
+    <link rel="icon" href="images/icon.png">
+
+    <!-- Style CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color:  #f9f9f9;
+            color: #212121;
+            scroll-behavior: smooth;
+        }
+
+        .title-font {
+            font-family: 'Playfair Display', serif;
+            color: black;
+            text-shadow: 0px 0px 3px black;
+        }
+
+                /* Navbar */
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            color: #2E3A59 !important;
+        }
+
+        .nav-link {
+        color: #555 !important;
+        transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+        color: #000 !important;
+        }
+
+       /* Site container */
+        .sitemap-container {
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+        }
+
+        .sitemap-box {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .sitemap-box:hover {
+            transform: translateY(-5px);
+            text-decoration: underline;
+        }
+
+        .sitemap-icon {
+            font-size: 1.5rem;
+            color: #2E3A59;
+            margin-right: 0.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2E3A59;
+            color: #ccc;
+        }
+
+        .footer h5,
+        .footer h6 {
+            color: white;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">Historical Monuments</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="zones.html">Zones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wonders.html">Wonders</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Site Map Content -->
+  <section class="sitemap-container container">
+    <h2 class="text-center title-font mb-5">Website Site Map</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="sitemap-box">
+          <h5><i class="bi bi-house-door sitemap-icon" ></i><a href="index.html" class="text-decoration-none text-dark">Home</a></h5>
+          <p class="text-muted">Main landing page with regional zones and intro.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="sitemap-box">
+          <h5><i class="bi bi-geo-alt sitemap-icon"></i><a href="zones.html" class="text-decoration-none text-dark">Zones</a></h5>
+          <ul class="list-unstyled ms-4">
+            <li><a href="north.html" class="text-decoration-none">North Zone</a></li>
+            <li><a href="south.html" class="text-decoration-none">South Zone</a></li>
+            <li><a href="east.html" class="text-decoration-none">East Zone</a></li>
+            <li><a href="west.html" class="text-decoration-none">West Zone</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="sitemap-box">
+          <h5><i class="bi bi-stars sitemap-icon"></i><a href="wonders.html" class="text-decoration-none text-dark">Seven Wonders</a></h5>
+          <p class="text-muted">Details of the Seven Wonders of the World.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="sitemap-box">
+          <h5><i class="bi bi-image sitemap-icon"></i><a href="gallery.html" class="text-decoration-none text-dark">Gallery</a></h5>
+          <p class="text-muted">Images of famous monuments around the world.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="sitemap-box">
+          <h5><i class="bi bi-chat-left-dots sitemap-icon"></i><a href="Feedback.html" class="text-decoration-none text-dark">Feedback</a></h5>
+          <p class="text-muted">Submit suggestions or comments on our site.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="sitemap-box">
+          <h5><i class="bi bi-envelope sitemap-icon"></i><a href="contactus.html" class="text-decoration-none text-dark">Contact Us</a></h5>
+          <p class="text-muted">Get in touch for more information.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="footer text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Historical Monuments</h5>
+                    <p class="small">Preserving stories carved in stone. Explore historical monuments and world wonders
+                        zone-wise with detailed insights and images.</p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="text-uppercase mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="zones.html">Zones</a></li>
+                        <li><a href="wonders.html">Wonders</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="Feedback.html">Feedback</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="text-uppercase mb-3">Contact Us</h6>
+                    <p class="small mb-1">Email:
+                      <a href="mailto:someone@example.com">info@historicalmonuments.com</a>
+                    </p>
+                    <p class="small mb-1">Phone: +91-123-456-7890</p>
+                    <p class="small">Address: 123 Monument Lane, History City, Earth</p>
+                </div>
+            </div>
+            <div class="text-center border-top pt-3 mt-3">
+                <p class="mb-0 small">&copy; 2025 Historical Monuments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

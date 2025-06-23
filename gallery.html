@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery | Historical Monuments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap"
+        rel="stylesheet">
+
+    <!-- Web logo -->
+    <link rel="icon" href="images/icon.png">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #212121;
+            scroll-behavior: smooth;
+        }
+
+     /* Navbar */
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            color: #2E3A59 !important;
+        }
+
+        .nav-link {
+            color: #555 !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+        color: #000 !important;
+        }
+
+      /* Gallery */
+        .gallery-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #2E3A59;
+            margin-top: 100px;
+            margin-bottom: 40px;
+            text-align: center;
+            text-shadow: 0 0 3px black;
+        }
+
+        .gallery-img {
+        width: 20vw;   
+        height: 25vh;   
+        object-fit: cover;    
+        border-radius: 10px;  
+        box-shadow: 0 4px 6px rgb(0 0 0 / 50%);
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.03);
+            scroll-behavior: smooth;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2E3A59;
+            color: #ccc;
+            padding: 40px 0 10px;
+            margin-top: 60px;
+        }
+
+        .footer h5,
+        .footer h6 {
+            color: white;
+            font-family: 'Playfair Display', serif;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">Historical Monuments</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="zones.html">Zones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wonders.html">Wonders</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Feedback.html">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Gallery Section -->
+    <div class="container">
+        <h1 class="gallery-title">Explore Our Monument Gallery</h1>
+        <div class="row g-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/tajmahal.jpg" alt="Taj Mahal" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/lahorefort.jpg" alt="Lahore Fort" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/eiffeltower.jpg" alt="Eiffel Tower" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/thecolosseum.jpg" alt="Colosseum" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/petra.jpg" alt="Petra" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/stonehenge.jpg" alt="Stonehenge" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/borobudurtemple.jpg" alt="Borobudur" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/babylon.jpg" alt="Babylon" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/machupicchu.jpg" alt="Machu Picchu" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/pyramid.jpg" alt="Pyramid" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/greatwallofchina.jpg" alt="greatwallofchina" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/theacropolis.jpg" alt="theacropolis" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/forbiddencity.jpg" alt="forbiddencity" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/chichenitza.jpg" alt="chichenitza" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/christtheredeemer.jpg" alt="christtheredeemer" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/victoriamemorial.jpg" alt="victoriamemorial" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/konarkasuntemple.jpg" alt="konarkasuntemple" class="gallery-img">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="images/angkorwat.jpg" alt="angkorwat" class="gallery-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="footer text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- About -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase mb-3">Historical Monuments</h5>
+                <p class="small">Preserving and promoting the wonders and monuments.</p>
+            </div>
+            <!-- Links -->
+            <div class="col-md-4 mb-4">
+                <h6 class="text-uppercase mb-3">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="zones.html">Zones</a></li>
+                    <li><a href="wonders.html">Wonders</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="Feedback.html">Feedback</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div class="col-md-4 mb-4">
+                <h6 class="text-uppercase mb-3">Contact Us</h6>
+                <p class="small mb-1">Email:
+                        <a href="mailto:someone@example.com">info@historicalmonuments.com</a></p>
+                </p>
+                <p class="small mb-1">Phone: +91-123-456-7890</p>
+                <p class="small">Address: 123 Monument Lane, History City, Earth</p>
+            </div>
+        </div>
+        <div class="text-center border-top pt-3 mt-3">
+            <p class="mb-0 small">&copy; 2025 Historical Monuments. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <!--  JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

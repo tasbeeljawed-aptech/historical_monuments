@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seven Wonders</title>
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap"  />
+
+    <!-- Web logo -->
+    <link rel="icon" href="images/icon.png">
+
+    <!-- Style CSS -->
+    <style>
+        body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f9f9f9;
+        color: #212121;
+        scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar-brand {
+        font-family: 'Playfair Display', serif;
+        color: #2E3A59 !important;
+        }
+
+        .nav-link {
+        color: #555 !important;
+        transition: color 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+        color: #000 !important;
+        }
+
+        /* Button*/
+       .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #2E3A59;
+        --bs-btn-border-color: #2E3A59;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #2E3A59;
+        --bs-btn-hover-border-color: #2E3A59;
+        --bs-btn-focus-shadow-rgb: 49,132,253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #2E3A59;
+        --bs-btn-active-border-color: #2E3A59;
+        --bs-btn-active-shadow: inset 0 3px 5pxrgb(0 0 0 / 61%);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #2E3A59;
+        --bs-btn-disabled-border-color: #2E3A59;
+        }
+
+      /* Hero Section */
+        header {
+            background: url('images/herosectionpic.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 5px 4px 20px black;
+            font-weight: 600;
+        }
+ 
+       /* Cards */
+        .card {
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2E3A59;
+            color: #ccc;
+        }
+
+        .footer h5,
+        .footer h6 {
+            color: white;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+ 
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(255, 255, 255);">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="index.html" style="font-family: 'Playfair Display', serif;">Historical Monuments</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="zones.html">Zones</a></li>
+          <li class="nav-item"><a class="nav-link active" href="wonders.html">Wonders</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="Feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="sitemap.html">Site Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+    <!-- Header -->
+    <header>
+        <h1>The Seven Wonders of the World</h1>
+    </header>
+
+    <!-- Wonders Section -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/tajmahal.jpg" class="card-img-top" alt="Taj Mahal">
+                    <div class="card-body">
+                        <h5 class="card-title">Taj Mahal, India</h5>
+                        <p class="card-text">A white marble symbol of love in Agra, India.</p>
+                        <a href="pdfs/taj_mahal.pdf" class="btn btn-primary" download="taj_mahal.pdf">Download Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/chichenitza.jpg" class="card-img-top" alt="Chichen Itza">
+                    <div class="card-body">
+                        <h5 class="card-title">Chichen Itza, Mexico</h5>
+                        <p class="card-text">Ancient Mayan pyramid El Castillo.</p>
+                        <a href="pdfs/chichen-Itza.pdf" class="btn btn-primary" download="chichen-Itza.pdf">Download Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/christtheredeemer.jpg" class="card-img-top" alt="Christ the Redeemer">
+                    <div class="card-body">
+                        <h5 class="card-title">Christ the Redeemer, Brazil</h5>
+                        <p class="card-text">Iconic statue overlooking Rio.</p>
+                        <a href="pdfs/Christ-the-redeemer..pdf" class="btn btn-primary" download="christ-the-redeemer.pdf">Download Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/thecolosseum.jpg" class="card-img-top" alt="Colosseum">
+                    <div class="card-body">
+                        <h5 class="card-title">Colosseum, Italy</h5>
+                        <p class="card-text">Ancient Roman amphitheatre in Rome.</p>
+                        <a href="pdfs/colosseum.pdf" class="btn btn-primary" download="colosseum.pdf">Download Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/machupicchu.jpg" class="card-img-top" alt="Machu Picchu">
+                    <div class="card-body">
+                        <h5 class="card-title">Machu Picchu, Peru</h5>
+                        <p class="card-text">Incan city in the Andes Mountains.</p>
+                        <a href="pdfs/machu-picchu.pdf" class="btn btn-primary" download="machu-picchu.pdf">Download Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/petra.jpg" class="card-img-top" alt="Petra">
+                    <div class="card-body">
+                        <h5 class="card-title">Petra, Jordan</h5>
+                        <p class="card-text">City famous for rock-cut architecture.</p>
+                        <a href="pdfs/jordan.pdf" class="btn btn-primary" download="jordan.pdf">Download Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/greatwallofchina.jpg" class="card-img-top" alt="Great Wall of China">
+                    <div class="card-body">
+                        <h5 class="card-title">Great Wall of China</h5>
+                        <p class="card-text">Fortified wall across northern China.</p>
+                        <a href="pdfs/greatwallofchina.pdf" class="btn btn-primary" download="greatwallofchina.pdf">Download Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white pt-5 pb-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <!-- About -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-uppercase mb-3">Historical Monuments</h5>
+                    <p class="small">Preserving stories carved in stone. Explore historical monuments and world wonders
+                        zone-wise with detailed insights and images.</p>
+                </div>
+                <!-- Links -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="text-uppercase mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="zones.html">Zones</a></li>
+                        <li><a href="wonders.html">Wonders</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div class="col-md-4 mb-4">
+                    <h6 class="text-uppercase mb-3">Contact Us</h6>
+                    <p class="small mb-1">Email:
+                        <a href="mailto:someone@example.com">info@historicalmonuments.com</a>
+                    </p>
+                    <p class="small mb-1">Phone: +91-123-456-7890</p>
+                    <p class="small">Address: 123 Monument Lane, History City, Earth</p>
+                </div>
+            </div>
+            <div class="text-center border-top pt-3 mt-3">
+                <p class="mb-0 small">&copy; 2025 Historical Monuments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
